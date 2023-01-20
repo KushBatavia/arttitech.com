@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body, html{
+
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+
+}
+
+body{
+
+    overflow-x: hidden;
+    background-color: #94bfff;
+
+}
+
+.menu-icon-c{
+
+    height: 60px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 100%;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.menu-icon-c:hover{
+
+    background-color: #fc7303;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.bar-c{
+
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(0%, -50%);
+
+}
+
+.bar{
+
+    height: 3px;
+    width: 23px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: 0.4s ease-in-out;
+
+}
+
+#bar2, #bar3{
+
+    margin-top: 5px;
+
+}
+
+.bar1t{
+
+    transform: translate(0, 8px) rotate(405deg);
+    
+}
+
+.bar2t{
+
+    transform: translate(100rem);
+
+}
+
+.bar3t{
+
+    transform: translate(0, -8px) rotate(-405deg);
+    
+}
+
+.sidemenu{
+
+    height: 100%;
+    width: 40vw;
+    background-color: #000;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: -40vw;
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+
+}
+
+.sidemenu a{
+
+    color: #fff;
+    font-size: 125%;
+
+}
+
+.sidemenu a:hover, .sidemenu a:active{
+
+    color: #fc7303;
+
+}
+
+.smt{
+
+    right: 0vw;
+
+}
+
+.sidemenu nav{
+
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+
+.jumbo{
+
+    height: 100%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+}
+
+#sidejumbo{
+
+    height: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate{
+    
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    25%{transform: translate(-50%, -50%) rotate(90deg);}
+    50%{transform: translate(-50%, -50%) rotate(180deg);}
+    75%{transform: translate(-50%, -50%) rotate(270deg);}
+    100%{transform: translate(-50%, -50%) rotate(0deg);}
+
+  }
+
+#jumbologo{
+
+    height: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+
+}
+
+#downarrow{
+
+    height: 1.5vw;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fc7303;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+#downarrow:hover{
+
+    top: 86%;
+
+}
+
+.jumbo-abt{
+
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5rem;
+
+}
+
+.jumbo-abt h1{
+
+    font-size: 10vw;
+    text-align: center;
+
+}
+
+.jumbo-products h1, .jumbo-contact h1{
+
+    font-size: 10vw;
+
+}
+
+.jumbo-abt p{
+
+    font-size: 2vw;
+
+}
+
+.jumbo-products{
+
+    min-height: 100%;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+
+}
+
+.grid-box{
+
+    margin-top: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 1em;
+    transition: 0.1s ease-in-out;
+
+}
+
+.grid-box:hover{
+
+    transform: translate(0, -1rem);
+
+}
+
+.col-sm img{
+
+    height: 20vw;
+
+}
+
+.col-xl- img{
+
+    height: 25vw;
+
+}
+
+@media (min-width: 0px) and (max-width: 1024px){
+    
+    #sidejumbo{
+
+        height: 70vw;
+
+    }
+
+    #jumbologo{
+
+        height: 15vw;
+
+    }
+
+    #downarrow{
+
+        height: 2vw;
+
+    }
+
+    .jumbo-abt p{
+
+        font-size: 5vw;
+        font-weight: 400;
+        margin-top: 5rem;
+    
+    }
+
+    .col-sm img{
+
+        height: 50vw;
+
+    }
+
+    .col-xl- img{
+
+        height: 70vw;
+        max-width: 70vw;
+
+    }
+
+}
+
+.jumbo-contact{
+
+    height: 100%;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    text-align: center;
+    padding-top: 5rem;
+
+}
+
+#btny{
+
+    background-color: #000;
+    border-radius: 50rem;
+    border: 0;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-size: 2.5vw;
+    padding: 2rem;
+    position: relative;
+    top: 20%;
+    margin-right: 2rem;
+    transform: translate(0%, -50%);
+
+}
